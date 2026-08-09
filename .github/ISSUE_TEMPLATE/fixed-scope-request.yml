@@ -1,0 +1,55 @@
+name: 固定范围 Excel/CSV 自动化需求
+description: 仅用于固定价格、异步文字、一次合并反馈的委托
+title: "[Fixed scope] "
+labels:
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此处是公开页面。请勿上传真实客户数据、身份证、联系方式、密码、商业秘密或未经授权的数据。只描述脱敏字段结构、行数和规则。
+  - type: dropdown
+    id: package
+    attributes:
+      label: 固定套餐
+      options:
+        - ¥399：单文件、≤10,000 行、≤3 条规则、输出 Excel
+        - ¥700：≤5 文件、≤50,000 行、≤5 条规则、异常报告和一次修订
+    validations:
+      required: true
+  - type: textarea
+    id: columns
+    attributes:
+      label: 脱敏字段结构
+      description: 仅列字段名、文件数量、预计行数和格式，不粘贴真实数据。
+      placeholder: 文件A.csv：订单号、日期、产品、数量、单价；约5,000行
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: 清洗与输出规则
+      description: 每条规则写成“输入条件 → 处理动作 → 预期结果”，最多5条。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收记录
+      description: 描述10–20条脱敏测试记录应得到的结果。
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 固定执行条款
+      options:
+        - label: 我同意全程仅异步文字沟通，不要求拉群、会议、语音、视频或实时屏幕共享。
+          required: true
+        - label: 我接受所选套餐的固定价格，不议价；超出范围的新增需求另开项目。
+          required: true
+        - label: 我会把反馈合并为一次文字消息；约定修订提交后进入验收和付款。
+          required: true
+        - label: 我没有在本工单中提交个人信息、真实业务数据、密码或商业秘密。
+          required: true
+
