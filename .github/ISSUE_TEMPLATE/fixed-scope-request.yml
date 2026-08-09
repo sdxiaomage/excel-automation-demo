@@ -13,8 +13,8 @@ body:
     attributes:
       label: 固定套餐
       options:
-        - ¥399：单文件、≤10,000 行、≤3 条规则、输出 Excel
-        - ¥700：≤5 文件、≤50,000 行、≤5 条规则、异常报告和一次修订
+        - ¥399：单文件、≤10,000 行、≤3 条规则、输出 Excel、7 天内一次规则缺陷修订
+        - ¥700：≤5 文件、≤50,000 行、≤5 条规则、异常报告、7 天内一次规则缺陷修订
     validations:
       required: true
   - type: textarea
@@ -52,4 +52,3 @@ body:
           required: true
         - label: 我没有在本工单中提交个人信息、真实业务数据、密码或商业秘密。
           required: true
-

@@ -1,0 +1,49 @@
+{% if page.url == '/en/' %}
+<link rel="alternate" hreflang="en" href="https://sdxiaomage.github.io/excel-automation-demo/en/">
+<link rel="alternate" hreflang="zh-CN" href="https://sdxiaomage.github.io/excel-automation-demo/">
+<link rel="alternate" hreflang="x-default" href="https://sdxiaomage.github.io/excel-automation-demo/">
+{% else %}
+<link rel="alternate" hreflang="zh-CN" href="https://sdxiaomage.github.io/excel-automation-demo/">
+<link rel="alternate" hreflang="en" href="https://sdxiaomage.github.io/excel-automation-demo/en/">
+<link rel="alternate" hreflang="x-default" href="https://sdxiaomage.github.io/excel-automation-demo/">
+<meta property="og:locale" content="zh_CN">
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Excel / CSV fixed-scope cleanup and reconciliation",
+  "serviceType": "Spreadsheet data cleanup, exception reporting, and reconciliation",
+  "provider": {
+    "@type": "Person",
+    "name": "sdxiaomage",
+    "url": "https://github.com/sdxiaomage"
+  },
+  "areaServed": "China",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://github.com/sdxiaomage/excel-automation-demo/issues/new?template=fixed-scope-request.yml",
+    "availableLanguage": ["zh-CN", "en"]
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Fixed spreadsheet cleanup packages",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "E1",
+        "price": "399",
+        "priceCurrency": "CNY",
+        "description": "One file, up to 10,000 rows and three written rules"
+      },
+      {
+        "@type": "Offer",
+        "name": "E2",
+        "price": "700",
+        "priceCurrency": "CNY",
+        "description": "Up to five files, 50,000 total rows, five written rules, exception report and reconciliation dashboard"
+      }
+    ]
+  }
+}
+</script>
