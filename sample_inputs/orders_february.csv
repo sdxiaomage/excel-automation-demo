@@ -1,0 +1,7 @@
+order_id,customer_id,order_date,product,quantity,unit_price,discount,status
+O-1002,C-002,2026/01/04,Widget B,1,250.00,0,PENDING
+O-1006,C-004,2026-02-01,Widget A,5,120.00,0.10,PAID
+O-1007,C-005,2026-02-02,Widget C,4,80.00,0,paid
+O-1008,C-001,2026-02-03,Widget B,-1,250.00,0,refund
+O-1009,C-006,2026-02-04,Widget A,1,120.00,1.50,paid
+

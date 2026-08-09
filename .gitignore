@@ -1,0 +1,4 @@
+node_modules/
+outputs/
+build_demo.mjs
+verify_demo.mjs
