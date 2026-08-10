@@ -18,6 +18,17 @@ I consolidate, deduplicate, normalize, validate, and reconcile fixed-template Ex
 
 The demo closes 10 input rows into 4 valid rows and 6 exception rows, with CNY 1,338.00 net valid-order value and a zero reconciliation difference. Dashboard totals and net values remain Excel formulas.
 
+## Reproducible public tool
+
+The repository also includes an MIT-licensed, zero-dependency [`csv-cleanroom` CLI](https://github.com/sdxiaomage/excel-automation-demo#可复现的零依赖-csv-工具). With Node.js 20+:
+
+```bash
+npm test
+npm run demo:csv
+```
+
+Tests cover quoted and multiline CSV records, the 10-row reconciliation demo, spreadsheet-formula text neutralization, input overwrite prevention, and the 50,000-row package boundary. CI rebuilds and compares the committed public outputs.
+
 ## Fixed packages
 
 | Package | Price | Scope | Delivery |
@@ -33,6 +44,6 @@ Inputs are fixed-header `.xlsx` or UTF-8 `.csv`. Typical work includes merge, de
 
 OCR, PDF, scanned images, macros/VBA, databases/APIs, scraping, scheduled jobs, complex template redesign, more than 50,000 rows, access bypass, and unauthorized personal or business data are excluded.
 
-Before coding, the request must state sanitized columns, row counts, written rules, and 10–20 sanitized acceptance records. Never upload real customer data, credentials, personal information, or business secrets to a public issue.
+Before coding, the request must state sanitized columns, row counts, written rules, and 10–20 sanitized acceptance records. The default delivery is a script or template that processes the complete dataset on the customer's own machine, so full business data stays in the customer's environment. Never upload real customer data, credentials, personal information, or business secrets to a public issue.
 
 Payment is due only after the written scope has been delivered and accepted. The currently verified domestic payment method is Alipay; international payment availability is not promised.

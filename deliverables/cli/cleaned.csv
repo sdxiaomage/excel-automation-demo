@@ -1,0 +1,5 @@
+order_id,customer_id,order_date,product,quantity,unit_price,discount,status,customer_name,region,source_file,source_row
+O-1001,C-001,2026-01-03,Widget A,2,120,0.05,Paid,华东零售,上海,orders_january.csv,2
+O-1002,C-002,2026-01-04,Widget B,1,250,0,Pending,北方工业,北京,orders_january.csv,3
+O-1006,C-004,2026-02-01,Widget A,5,120,0.1,Paid,西部供应链,成都,orders_february.csv,3
+O-1007,C-005,2026-02-02,Widget C,4,80,0,Paid,湖畔商贸,杭州,orders_february.csv,4

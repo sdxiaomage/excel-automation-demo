@@ -1,0 +1,7 @@
+source_file,source_row,record_key,error_field,error_type,reason,raw_value
+orders_january.csv,4,O-1003,customer_id,Lookup,Value is missing from sample_inputs/customers.csv,C-999
+orders_january.csv,5,O-1004,customer_id,Required,Required value is empty,
+orders_january.csv,6,O-1005,order_date,Date,Expected YYYY-MM-DD or YYYY/MM/DD,bad-date
+orders_february.csv,2,O-1002,order_id,Duplicate,Key already appeared in an earlier input row,O-1002
+orders_february.csv,5,O-1008,quantity,Range,Numeric value is outside the configured range,-1
+orders_february.csv,6,O-1009,discount,Range,Numeric value is outside the configured range,1.50

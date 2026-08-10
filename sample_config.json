@@ -1,0 +1,58 @@
+{
+  "inputs": [
+    "sample_inputs/orders_january.csv",
+    "sample_inputs/orders_february.csv"
+  ],
+  "dedupe": {
+    "field": "order_id"
+  },
+  "required": [
+    "order_id",
+    "customer_id"
+  ],
+  "trim": [
+    "product"
+  ],
+  "dates": [
+    {
+      "field": "order_date"
+    }
+  ],
+  "numbers": [
+    {
+      "field": "quantity",
+      "minExclusive": 0
+    },
+    {
+      "field": "unit_price",
+      "min": 0
+    },
+    {
+      "field": "discount",
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "enums": [
+    {
+      "field": "status",
+      "values": {
+        "paid": "Paid",
+        "pending": "Pending",
+        "refund": "Refund"
+      }
+    }
+  ],
+  "lookups": [
+    {
+      "file": "sample_inputs/customers.csv",
+      "localField": "customer_id",
+      "foreignField": "customer_id",
+      "select": [
+        "customer_name",
+        "region"
+      ],
+      "required": true
+    }
+  ]
+}
