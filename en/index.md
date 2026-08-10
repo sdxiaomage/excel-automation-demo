@@ -29,6 +29,18 @@ npm run demo:csv
 
 Tests cover quoted and multiline CSV records, the 10-row reconciliation demo, spreadsheet-formula text neutralization, input overwrite prevention, and the 50,000-row package boundary. CI rebuilds and compares the committed public outputs.
 
+For repository workflows, use the public [CSV Cleanroom GitHub Action](https://github.com/sdxiaomage/csv-cleanroom-action) without installing a package:
+
+```yaml
+- uses: sdxiaomage/csv-cleanroom-action@v1
+  with:
+    config: rules.json
+    output: csv-cleanroom-output
+    fail_on_exceptions: "true"
+```
+
+The Node.js 24 Action has no runtime dependencies, network requests, or secret requirements. Config, input, and output paths stay inside the GitHub workspace. Its public [`v1.0.0` release](https://github.com/sdxiaomage/csv-cleanroom-action/releases/tag/v1.0.0) passed Ubuntu, Windows, macOS, and remote-version smoke tests. For strongest supply-chain pinning, replace `@v1` with the full commit SHA shown in its README.
+
 ## Fixed packages
 
 | Package | Price | Scope | Delivery |
