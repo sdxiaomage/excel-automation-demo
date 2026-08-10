@@ -1,6 +1,6 @@
 {
   "name": "excel-csv-cleanup-demo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Zero-dependency CSV cleanup, validation, exception reporting, and reconciliation demo",
   "type": "module",

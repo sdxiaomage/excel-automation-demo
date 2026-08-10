@@ -14,7 +14,7 @@ I consolidate, deduplicate, normalize, validate, and reconcile fixed-template Ex
 
 ## Verifiable demo
 
-[Download the sample workbook](https://github.com/sdxiaomage/excel-automation-demo/releases/download/v1.0.0/consolidated_orders_demo.xlsx) · [Read the validation report](https://github.com/sdxiaomage/excel-automation-demo/blob/main/deliverables/VALIDATION.md) · [Inspect sanitized inputs](https://github.com/sdxiaomage/excel-automation-demo/tree/main/sample_inputs)
+[Download the sample workbook](https://github.com/sdxiaomage/excel-automation-demo/releases/download/v1.1.0/consolidated_orders_demo.xlsx) · [Download the CLI release](https://github.com/sdxiaomage/excel-automation-demo/releases/tag/v1.1.0) · [Read the validation report](https://github.com/sdxiaomage/excel-automation-demo/blob/main/deliverables/VALIDATION.md) · [Inspect sanitized inputs](https://github.com/sdxiaomage/excel-automation-demo/tree/main/sample_inputs)
 
 The demo closes 10 input rows into 4 valid rows and 6 exception rows, with CNY 1,338.00 net valid-order value and a zero reconciliation difference. Dashboard totals and net values remain Excel formulas.
 

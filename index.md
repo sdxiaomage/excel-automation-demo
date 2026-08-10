@@ -14,7 +14,7 @@ lang: zh-CN
 
 ## 可下载的真实 Demo
 
-[下载示例工作簿](https://github.com/sdxiaomage/excel-automation-demo/releases/download/v1.0.0/consolidated_orders_demo.xlsx) · [查看验收报告](https://github.com/sdxiaomage/excel-automation-demo/blob/main/deliverables/VALIDATION.md) · [查看脱敏输入](https://github.com/sdxiaomage/excel-automation-demo/tree/main/sample_inputs)
+[下载示例工作簿](https://github.com/sdxiaomage/excel-automation-demo/releases/download/v1.1.0/consolidated_orders_demo.xlsx) · [下载 CLI 发布包](https://github.com/sdxiaomage/excel-automation-demo/releases/tag/v1.1.0) · [查看验收报告](https://github.com/sdxiaomage/excel-automation-demo/blob/main/deliverables/VALIDATION.md) · [查看脱敏输入](https://github.com/sdxiaomage/excel-automation-demo/tree/main/sample_inputs)
 
 示例将两个订单文件和一份客户主数据闭环处理：
 
