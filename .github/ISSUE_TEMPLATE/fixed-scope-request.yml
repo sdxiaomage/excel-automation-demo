@@ -39,6 +39,17 @@ body:
       description: 描述10–20条脱敏测试记录应得到的结果。
     validations:
       required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: 你从哪里看到这个服务（可选）
+      description: 仅用于判断公开工具和目录是否带来真实委托，不影响受理。
+      options:
+        - CSV Cleanroom GitHub Action
+        - csv-cleanroom CLI / Release
+        - GitHub 个人主页
+        - GitHub 工具目录
+        - 搜索引擎或其他来源
   - type: checkboxes
     id: terms
     attributes:
