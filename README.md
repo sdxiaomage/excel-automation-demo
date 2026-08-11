@@ -27,7 +27,7 @@ npm run demo:csv
 
 配置示例见 [`sample_config.json`](sample_config.json)。该工具是可复现的公开 Demo，不是完整 YAML/Excel 解释器或数据质量保证；真实规则仍需书面验收样本。
 
-无需安装即可在 GitHub 工作流中调用独立的 [`sdxiaomage/csv-cleanroom-action@v1`](https://github.com/sdxiaomage/csv-cleanroom-action)。该 Node.js 24 Action 运行期零依赖、无网络请求，并已通过 Ubuntu、Windows、macOS 与公开 `v1.0.0` 远程引用测试。
+无需安装即可在 GitHub 工作流中调用独立的 [`sdxiaomage/csv-cleanroom-action@v1`](https://github.com/sdxiaomage/csv-cleanroom-action)。该 Node.js 24 Action 运行期零依赖、无网络请求；`v1` 与 `v1.2.0` 指向同一加固提交，并已通过 Ubuntu、Windows、macOS 与公开 `@v1` 远程引用测试。
 
 ## 商业服务边界
 

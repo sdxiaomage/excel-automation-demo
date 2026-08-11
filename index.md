@@ -49,7 +49,7 @@ npm run demo:csv
     fail_on_exceptions: "true"
 ```
 
-该 Action 使用 Node.js 24、运行期零第三方依赖，不访问网络或 Secrets；配置、输入和输出均限制在当前 GitHub 工作区。公开 [`v1.0.0` Release](https://github.com/sdxiaomage/csv-cleanroom-action/releases/tag/v1.0.0) 已通过 Ubuntu、Windows、macOS 以及远程版本引用测试。需要最强供应链固定时，请把 `@v1` 换为 README 中公开的完整提交 SHA。
+该 Action 使用 Node.js 24、运行期零第三方依赖，不访问网络或 Secrets；配置、输入和输出均限制在当前 GitHub 工作区。公开 [`v1.2.0` 标签](https://github.com/sdxiaomage/csv-cleanroom-action/tree/v1.2.0)与移动 `v1` 指向同一提交，并通过 Ubuntu、Windows、macOS 及公开 `@v1` 引用测试。需要最强供应链固定时，请把 `@v1` 换为 README 中公开的完整提交 SHA。
 
 ## 两个固定套餐
 
