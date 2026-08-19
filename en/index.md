@@ -39,7 +39,7 @@ For repository workflows, use the public [CSV Cleanroom GitHub Action](https://g
     fail_on_exceptions: "true"
 ```
 
-The Node.js 24 Action has no runtime dependencies, network requests, or secret requirements. Config, input, and output paths stay inside the GitHub workspace. Its public [`v1.0.0` release](https://github.com/sdxiaomage/csv-cleanroom-action/releases/tag/v1.0.0) passed Ubuntu, Windows, macOS, and remote-version smoke tests. For strongest supply-chain pinning, replace `@v1` with the full commit SHA shown in its README.
+The Node.js 24 Action has no runtime dependencies, network requests, or secret requirements. Config, input, and output paths stay inside the GitHub workspace. Its public [`v1.2.0` release](https://github.com/sdxiaomage/csv-cleanroom-action/releases/tag/v1.2.0) passed Ubuntu, Windows, macOS, and remote-version smoke tests; the moving `v1` tag points to the same hardened commit. For strongest supply-chain pinning, replace `@v1` with the full commit SHA shown in its README.
 
 ## Fixed packages
 
